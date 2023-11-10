@@ -1,0 +1,19 @@
+.font(@fname, @fstyle, @fweight, @furl2, @furl) {
+  @font-face {
+    font-family: @fname;
+    font-style: @fstyle;
+    font-weight: @fweight;
+    src: url(@furl2) format('woff2'),
+      url(@furl) format('woff');
+    font-display: swap;
+  }
+}
+
+.font('Cormorant', italic, 300, '../fonts/cormorant-light-italic.woff2', '../fonts/cormorant-light-italic.woff');
+.font('Cormorant', normal, 400, '../fonts/cormorant-regular.woff2', '../fonts/cormorant-regular.woff');
+.font('Open Sans', italic, 300, '../fonts/open-sans-light-italic.woff2', '../fonts/open-sans-light-italic.woff');
+.font('Open Sans', normal, 300, '../fonts/open-sans-light.woff2', '../fonts/open-sans-light.woff');
+.font('Open Sans', normal, 400, '../fonts/open-sans-regular.woff2', '../fonts/open-sans-regular.woff');
+.font('Open Sans', normal, 600, '../fonts/open-sans-semi-bold.woff2', '../fonts/open-sans-semi-bold.woff');
+
+// font-family: 'Cormorant', serif;

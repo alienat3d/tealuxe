@@ -1,0 +1,69 @@
+// * ==| Imports |== * \\
+@import (less) '../vendor/css/normalize.css';
+// @import (less) './../../node_modules/swiper/swiper-bundle.css';
+@import '_smart-grid.less';
+@import '_variables.less';
+@import '_fonts.less';
+@import '_base.less';
+// * Здесь можно либо подключить normalize.css, либо воспользоваться примесью от Smart-grid ".reset()", тут на усмотрение каждого. Но на самом деле в normalize больше всего, например удаление лишних стилей кнопок и форм для iOS, зато там нет img { height: auto; и max-width: 100%; }.
+// .reset();
+
+// * Т.к. эта примесь не параметризуемая, то лучше всего создать для неё определённый класс, соответствующий центрирующей обёртке и поместить в него примесь.
+.wrapper {
+  .wrapper();
+}
+
+/* .debugGrid {
+  .debug(rgba(0, 0, 0, 0.3), 1px solid #ff0);
+} */
+
+// >==================|HEADER|==================< \\
+.header__inner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  min-width: 73px;
+  align-self: flex-start;
+}
+.menu {
+  margin-left: 50px;
+}
+.menu__list {
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  // align-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  gap: 24px 65px;
+}
+.menu__list-link {
+}
+.user-actions {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  gap: 25px 20px;
+}
+
+.user-actions__item:last-of-type {
+  margin-left: auto;
+}
+
+.user-actions__button {
+}
+.user-actions__icon {
+}
+.user-actions__search {
+  display: none;
+}
+
+// >==========================================< \\
